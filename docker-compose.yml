@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  # Production: build the app and serve via nginx on port 8080
+  web:
+    # build: .
+    # image: aerator_runtime_calculator:latest
+    image: sarkerovijit/aerator_runtime_calculator:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  # Optional development service: mounts source and runs the vite dev server
+  # Use when you want to develop inside Docker. Start with:
+  #   docker compose up dev
+  # dev:
+  #   image: node:18
+  #   working_dir: /app
+  #   volumes:
+  #     - ./:/app:delegated
+  #     - /app/node_modules
+  #   command: sh -c "npm install --silent && npm run dev"
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - CHOKIDAR_USEPOLLING=true
+  #   stdin_open: true
+  #   tty: true
