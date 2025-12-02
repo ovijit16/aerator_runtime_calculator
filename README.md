@@ -43,3 +43,5 @@ Notes:
   serving the compiled `dist` directory.
 - If you prefer to run the dev server inside a container, consider mounting the
   source and running `npm run dev` in a node image instead (not covered here).
+
+jenkins test
