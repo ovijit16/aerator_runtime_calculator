@@ -1,0 +1,5 @@
+{
+  "name": "Aerator Runtime Calculator",
+  "description": "An application to process aerator activity logs from a JSON file. It filters data by device and date, calculates the total daily runtime, and allows exporting the results to an Excel file.",
+  "requestFramePermissions": []
+}
